@@ -30,7 +30,8 @@ class Program
                                  "Output only the script. " +
                                  "Be concise.");// but add comments to the code where needed.");
 
-        Chat.AppendUserInput(DecorateMessage(string.Join(" ", args)));
+        Chat.AppendUserInput("Write a bash script that does the following: " +
+                             DecorateMessage(string.Join(" ", args)));
 
         string FinalScript = "";
         {
@@ -148,7 +149,6 @@ class Program
         if (message.Last() != '.')
             message += '.';
 
-        message = "Write a bash script that does the following: " + message;
         message += " Output only the script.";
 
         return message;
