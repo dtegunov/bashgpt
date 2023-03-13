@@ -30,8 +30,7 @@ class Program
                                  "Output only the script. " +
                                  "Be concise.");// but add comments to the code where needed.");
 
-        //Chat.AppendUserInput(DecorateMessage(string.Join(" ", args)));
-        Chat.AppendUserInput(DecorateMessage("write a bash script that copies all files ending in .mrc from myfolder1 to myfolder2 and changes their extension from .mrc to .mrcs"));
+        Chat.AppendUserInput(DecorateMessage(string.Join(" ", args)));
 
         string FinalScript = "";
         {
